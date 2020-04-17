@@ -95,6 +95,12 @@ void SX126xWriteCommand( RadioCommands_t command, uint8_t *buffer, uint16_t size
 {
     uint16_t i;
     SX126xCheckDeviceReady( );
+    
+    if(command == RADIO_SET_TX ||
+       command == RADIO_SET_TXCONTINUOUSWAVE ||
+       command == RADIO_SET_TXCONTINUOUSPREAMBLE){
+        SX126xAntSwOff();
+    }
 
     GpioWrite( &SX126x.Spi.Nss, 0 );
 

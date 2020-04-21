@@ -506,7 +506,12 @@ void SX126xSetTxParams( int8_t power, RadioRampTimes_t rampTime )
         SX126xWriteRegister( REG_OCP, 0x18 ); // current max is 80 mA for the whole device
     }
     else // sx1262
-    {
+    {        
+        // WORKAROUND - Better Resistance of the SX1262 Tx to Antenna Mismatch, see DS_SX1261-2_V1.2 datasheet chapter 15.2
+        // RegTxClampConfig = @address 0x08D8
+        SX126xWriteRegister( 0x08D8, SX126xReadRegister( 0x08D8 ) | ( 0x0F << 1 ) );
+        // WORKAROUND END
+
         switch(gPaOptSetting) {
             case 3: { 
                 SX126xSetPaConfig( 0x02, 0x02, 0x00, 0x01 ); 

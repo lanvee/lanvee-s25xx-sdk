@@ -493,7 +493,7 @@
                 <option>
                     <name>OOCOutputFormat</name>
                     <version>2</version>
-                    <state>0</state>
+                    <state>1</state>
                 </option>
                 <option>
                     <name>OCOutputOverride</name>
@@ -501,7 +501,7 @@
                 </option>
                 <option>
                     <name>OOCOutputFile</name>
-                    <state>asr6505_lorawan20200311.s19</state>
+                    <state>lanvee-s25xx-sdk.hex</state>
                 </option>
                 <option>
                     <name>OOCCommandLineProducer</name>

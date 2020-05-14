@@ -537,9 +537,9 @@
         </settings>
         <settings>
             <name>ILINK</name>
-            <archiveVersion>4</archiveVersion>
+            <archiveVersion>5</archiveVersion>
             <data>
-                <version>3</version>
+                <version>4</version>
                 <wantNonLocal>1</wantNonLocal>
                 <debug>1</debug>
                 <option>
@@ -786,6 +786,22 @@
                 <option>
                     <name>IlinkLogCallGraph</name>
                     <state>0</state>
+                </option>
+                <option>
+                    <name>IlinkRawBinaryFile2</name>
+                    <state></state>
+                </option>
+                <option>
+                    <name>IlinkRawBinarySymbol2</name>
+                    <state></state>
+                </option>
+                <option>
+                    <name>IlinkRawBinarySegment2</name>
+                    <state></state>
+                </option>
+                <option>
+                    <name>IlinkRawBinaryAlign2</name>
+                    <state></state>
                 </option>
             </data>
         </settings>
@@ -1338,9 +1354,9 @@
         </settings>
         <settings>
             <name>ILINK</name>
-            <archiveVersion>4</archiveVersion>
+            <archiveVersion>5</archiveVersion>
             <data>
-                <version>3</version>
+                <version>4</version>
                 <wantNonLocal>1</wantNonLocal>
                 <debug>0</debug>
                 <option>
@@ -1587,6 +1603,22 @@
                 <option>
                     <name>IlinkLogCallGraph</name>
                     <state>0</state>
+                </option>
+                <option>
+                    <name>IlinkRawBinaryFile2</name>
+                    <state></state>
+                </option>
+                <option>
+                    <name>IlinkRawBinarySymbol2</name>
+                    <state></state>
+                </option>
+                <option>
+                    <name>IlinkRawBinarySegment2</name>
+                    <state></state>
+                </option>
+                <option>
+                    <name>IlinkRawBinaryAlign2</name>
+                    <state></state>
                 </option>
             </data>
         </settings>
@@ -1847,16 +1879,16 @@
                 <name>$PROJ_DIR$\..\..\..\Libraries\STM8L15x_StdPeriph_Driver\inc\stm8l15x_tim1.h</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\..\Libraries\STM8L15x_StdPeriph_Driver\inc\stm8l15x_TIM2.h</name>
+                <name>$PROJ_DIR$\..\..\..\Libraries\STM8L15x_StdPeriph_Driver\inc\stm8l15x_tim2.h</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\..\Libraries\STM8L15x_StdPeriph_Driver\inc\stm8l15x_TIM3.h</name>
+                <name>$PROJ_DIR$\..\..\..\Libraries\STM8L15x_StdPeriph_Driver\inc\stm8l15x_tim3.h</name>
             </file>
             <file>
                 <name>$PROJ_DIR$\..\..\..\Libraries\STM8L15x_StdPeriph_Driver\inc\stm8l15x_tim4.h</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\..\Libraries\STM8L15x_StdPeriph_Driver\inc\stm8l15x_TIM5.h</name>
+                <name>$PROJ_DIR$\..\..\..\Libraries\STM8L15x_StdPeriph_Driver\inc\stm8l15x_tim5.h</name>
             </file>
             <file>
                 <name>$PROJ_DIR$\..\..\..\Libraries\STM8L15x_StdPeriph_Driver\inc\stm8l15x_usart.h</name>
@@ -1934,7 +1966,7 @@
         <group>
             <name>inc</name>
             <file>
-                <name>$PROJ_DIR$\..\inc\commissioning.h</name>
+                <name>$PROJ_DIR$\..\inc\Commissioning.h</name>
             </file>
             <file>
                 <name>$PROJ_DIR$\..\inc\debug.h</name>

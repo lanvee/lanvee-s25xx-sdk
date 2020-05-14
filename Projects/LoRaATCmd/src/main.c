@@ -4,6 +4,7 @@
 #include <stdint.h>
 #include "linkwan.h"
 #include "board.h"
+#include "at_command.h"
 
 LOG_LEVEL g_log_level = LL_DEBUG;
 #define LORAWAN_APP_PORT 100
@@ -42,6 +43,13 @@ int main( void )
 {
     BoardInitMcu();    
     lora_init(&LoRaMainCallbacks);  
-    lora_fsm( );
+    
+    for (;;) {
+        lora_fsm( );
+#ifdef LORA_AT_COMMAND
+        linkwan_at_process();
+#endif
+    }
+    
     return 0;
 }

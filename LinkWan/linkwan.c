@@ -11,7 +11,6 @@
 #include "debug.h"
 #include "linkwan.h"
 #include "delay.h"
-#include "at_command.h"
 #include "timer.h"
 
  
@@ -416,13 +415,10 @@ void lora_init(LoRaMainCallback_t *callbacks)
 void lora_fsm( void )
 {
 #ifdef CONFIG_LINKWAN                
-		MibRequestConfirm_t mib_req;
-		JoinSettings_t join_settings;
+    static MibRequestConfirm_t mib_req;
+	static JoinSettings_t join_settings;
 #endif
-    while (1) {
-#ifdef LORA_AT_COMMAND
-        linkwan_at_process();
-#endif
+   /* while (1) { */ /* we should loop in main() */
         if (Radio.IrqProcess != NULL) {
             Radio.IrqProcess();
         }
@@ -595,7 +591,7 @@ void lora_fsm( void )
                 break;
             }
         }
-    }
+   /* } */
 }
 
 DeviceState_t lwan_dev_state_get( void )

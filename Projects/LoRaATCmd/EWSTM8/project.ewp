@@ -189,6 +189,7 @@
                 <option>
                     <name>CCDefines</name>
                     <state>REGION_CN470</state>
+                    <state>xREGION_EU868</state>
                     <state>CONFIG_LINKWAN</state>
                     <state>CONFIG_DEBUG_LINKWAN</state>
                     <state>LORA_AT_COMMAND</state>
@@ -1671,6 +1672,12 @@
         </file>
         <file>
             <name>$PROJ_DIR$\..\..\..\LoRaMac-node\src\mac\region\RegionCN470.h</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\LoRaMac-node\src\mac\region\RegionEU868.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\LoRaMac-node\src\mac\region\RegionEU868.h</name>
         </file>
     </group>
     <group>

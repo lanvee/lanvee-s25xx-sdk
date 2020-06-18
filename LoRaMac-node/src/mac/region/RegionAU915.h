@@ -40,7 +40,7 @@
 /*!
  * LoRaMac maximum number of channels
  */
-#define AU915_MAX_NB_CHANNELS                       72
+#define AU915_MAX_NB_CHANNELS                       16
 
 /*!
  * Minimal datarate that can be used by the node

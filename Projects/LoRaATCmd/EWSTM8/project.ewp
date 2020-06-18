@@ -188,8 +188,12 @@
                 </option>
                 <option>
                     <name>CCDefines</name>
+                    <state>xREGION_EU433</state>
                     <state>REGION_CN470</state>
                     <state>xREGION_EU868</state>
+                    <state>xREGION_AU915</state>
+                    <state>xREGION_US915</state>
+                    <state>xREGION_AS923</state>
                     <state>CONFIG_LINKWAN</state>
                     <state>CONFIG_DEBUG_LINKWAN</state>
                     <state>LORA_AT_COMMAND</state>
@@ -1668,16 +1672,40 @@
             <name>$PROJ_DIR$\..\..\..\LinkWan\lwan_config.h</name>
         </file>
         <file>
+            <name>$PROJ_DIR$\..\..\..\LoRaMac-node\src\mac\region\RegionAS923.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\LoRaMac-node\src\mac\region\RegionAS923.h</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\LoRaMac-node\src\mac\region\RegionAU915.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\LoRaMac-node\src\mac\region\RegionAU915.h</name>
+        </file>
+        <file>
             <name>$PROJ_DIR$\..\..\..\LoRaMac-node\src\mac\region\RegionCN470.c</name>
         </file>
         <file>
             <name>$PROJ_DIR$\..\..\..\LoRaMac-node\src\mac\region\RegionCN470.h</name>
         </file>
         <file>
+            <name>$PROJ_DIR$\..\..\..\LoRaMac-node\src\mac\region\RegionEU433.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\LoRaMac-node\src\mac\region\RegionEU433.h</name>
+        </file>
+        <file>
             <name>$PROJ_DIR$\..\..\..\LoRaMac-node\src\mac\region\RegionEU868.c</name>
         </file>
         <file>
             <name>$PROJ_DIR$\..\..\..\LoRaMac-node\src\mac\region\RegionEU868.h</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\LoRaMac-node\src\mac\region\RegionUS915.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\LoRaMac-node\src\mac\region\RegionUS915.h</name>
         </file>
     </group>
     <group>

@@ -24,7 +24,7 @@ typedef enum LOG_LEVEL_E {
 } LOG_LEVEL;
 
 #ifdef CONFIG_DEBUG_LINKWAN
-#ifdef __CSMC__
+#if 1
     #define ERR_PRINTF printf
     #define WARN_PRINTF printf
     #define DBG_PRINTF printf

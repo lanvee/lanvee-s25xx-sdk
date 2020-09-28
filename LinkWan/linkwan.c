@@ -352,17 +352,17 @@ static void print_dev_info(void)
     int i = 0;
     if(g_lwan_dev_config_p->modes.join_mode == JOIN_MODE_OTAA){
         DBG_LINKWAN("OTAA\r\n" );
-        DBG_LINKWAN("DevEui= %02X-%02X-%02X-%02X-%02X-%02X-%02X-%02X\r\n",
+        DBG_LINKWAN("DevEui= %02X%02X%02X%02X%02X%02X%02X%02X\r\n",
                     (uint16_t)g_lwan_dev_keys_p->ota.deveui[0], (uint16_t)g_lwan_dev_keys_p->ota.deveui[1], \
                     (uint16_t)g_lwan_dev_keys_p->ota.deveui[2], (uint16_t)g_lwan_dev_keys_p->ota.deveui[3], \
                     (uint16_t)g_lwan_dev_keys_p->ota.deveui[4], (uint16_t)g_lwan_dev_keys_p->ota.deveui[5], \
                     (uint16_t)g_lwan_dev_keys_p->ota.deveui[6], (uint16_t)g_lwan_dev_keys_p->ota.deveui[7]);
-        DBG_LINKWAN("AppEui= %02X-%02X-%02X-%02X-%02X-%02X-%02X-%02X\r\n",
+        DBG_LINKWAN("AppEui= %02X%02X%02X%02X%02X%02X%02X%02X\r\n",
                     (uint16_t)g_lwan_dev_keys_p->ota.appeui[0], (uint16_t)g_lwan_dev_keys_p->ota.appeui[1], \
                     (uint16_t)g_lwan_dev_keys_p->ota.appeui[2], (uint16_t)g_lwan_dev_keys_p->ota.appeui[3], \
                     (uint16_t)g_lwan_dev_keys_p->ota.appeui[4], (uint16_t)g_lwan_dev_keys_p->ota.appeui[5], \
                     (uint16_t)g_lwan_dev_keys_p->ota.appeui[6], (uint16_t)g_lwan_dev_keys_p->ota.appeui[7]);
-        DBG_LINKWAN("AppKey= %02X-%02X-%02X-%02X-%02X-%02X-%02X-%02X-%02X-%02X-%02X-%02X-%02X-%02X-%02X-%02X\r\n",
+        DBG_LINKWAN("AppKey= %02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X\r\n",
                     (uint16_t)g_lwan_dev_keys_p->ota.appkey[0], (uint16_t)g_lwan_dev_keys_p->ota.appkey[1], \
                     (uint16_t)g_lwan_dev_keys_p->ota.appkey[2], (uint16_t)g_lwan_dev_keys_p->ota.appkey[3], \
                     (uint16_t)g_lwan_dev_keys_p->ota.appkey[4], (uint16_t)g_lwan_dev_keys_p->ota.appkey[5], \
